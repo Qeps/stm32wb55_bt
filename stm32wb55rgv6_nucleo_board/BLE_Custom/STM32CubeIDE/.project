@@ -108,11 +108,6 @@
 			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_ipcc.c</locationURI>
 		</link>
 		<link>
-			<name>Drivers/STM32WBxx_HAL_Driver/stm32wbxx_hal_rng.c</name>
-			<type>1</type>
-			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rng.c</locationURI>
-		</link>
-		<link>
 			<name>Drivers/STM32WBxx_HAL_Driver/stm32wbxx_hal_pwr.c</name>
 			<type>1</type>
 			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pwr.c</locationURI>
@@ -131,6 +126,11 @@
 			<name>Drivers/STM32WBxx_HAL_Driver/stm32wbxx_hal_rcc_ex.c</name>
 			<type>1</type>
 			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rcc_ex.c</locationURI>
+		</link>
+		<link>
+			<name>Drivers/STM32WBxx_HAL_Driver/stm32wbxx_hal_rng.c</name>
+			<type>1</type>
+			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rng.c</locationURI>
 		</link>
 		<link>
 			<name>Drivers/STM32WBxx_HAL_Driver/stm32wbxx_hal_rtc.c</name>
@@ -186,7 +186,7 @@
 			<name>Middlewares/STM32_WPAN/ble_l2cap_aci.c</name>
 			<type>1</type>
 			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/Middlewares/ST/STM32_WPAN/ble/core/auto/ble_l2cap_aci.c</locationURI>
-		</link>        
+		</link>
 		<link>
 			<name>Middlewares/STM32_WPAN/dbg_trace.c</name>
 			<type>1</type>
@@ -296,6 +296,16 @@
 			<name>Application/User/STM32_WPAN/App/app_ble.c</name>
 			<type>1</type>
 			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/STM32_WPAN/App/app_ble.c</locationURI>
+		</link>
+		<link>
+			<name>Application/User/STM32_WPAN/App/app_protocol.c</name>
+			<type>1</type>
+			<location>C:/Projects_portfolio/stm32wb55_bt/stm32wb55rgv6_nucleo_board/BLE_Custom/STM32_WPAN/App/app_protocol.c</location>
+		</link>
+		<link>
+			<name>Application/User/STM32_WPAN/App/app_protocol.h</name>
+			<type>1</type>
+			<location>C:/Projects_portfolio/stm32wb55_bt/stm32wb55rgv6_nucleo_board/BLE_Custom/STM32_WPAN/App/app_protocol.h</location>
 		</link>
 		<link>
 			<name>Application/User/STM32_WPAN/App/custom_app.c</name>

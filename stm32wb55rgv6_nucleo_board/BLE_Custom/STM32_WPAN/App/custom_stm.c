@@ -73,7 +73,7 @@ extern uint16_t Connection_Handle;
 
 /* Private variables ---------------------------------------------------------*/
 uint16_t SizeLed_C = 2;
-uint16_t SizeSwitch_C = 2;
+uint16_t SizeSwitch_C = 20;
 uint16_t SizeLong_C = 300;
 uint16_t SizeHrs_M = 5;
 uint16_t SizeHrs_Sl = 1;

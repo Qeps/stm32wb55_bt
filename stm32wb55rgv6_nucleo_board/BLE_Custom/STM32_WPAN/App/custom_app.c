@@ -29,7 +29,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "app_protocol.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -122,19 +122,14 @@ void Custom_STM_App_Notification(Custom_STM_App_Notification_evt_t *pNotificatio
       break;
 
     case CUSTOM_STM_LED_C_WRITE_NO_RESP_EVT:
-      /* USER CODE BEGIN CUSTOM_STM_LED_C_WRITE_NO_RESP_EVT */
-      APP_DBG_MSG("\r\n\r** CUSTOM_STM_LED_C_WRITE_NO_RESP_EVT \n");
-      APP_DBG_MSG("\r\n\r** Write Data: 0x%02X %02X \n", pNotification->DataTransfered.pPayload[0], pNotification->DataTransfered.pPayload[1]);
-      if (pNotification->DataTransfered.pPayload[1] == 0x01)
-      {
-        HAL_GPIO_WritePin(Blue_Led_GPIO_Port, Blue_Led_Pin, GPIO_PIN_SET); 
-      }
-      if (pNotification->DataTransfered.pPayload[1] == 0x00)
-      {
-        HAL_GPIO_WritePin(Blue_Led_GPIO_Port, Blue_Led_Pin, GPIO_PIN_RESET); 
-      } 
-      /* USER CODE END CUSTOM_STM_LED_C_WRITE_NO_RESP_EVT */
-      break;
+    {
+        AppProtocol_HandleRx(
+            pNotification->DataTransfered.pPayload,
+            pNotification->DataTransfered.Length
+        );
+    }
+    break;
+
 
     case CUSTOM_STM_SWITCH_C_NOTIFY_ENABLED_EVT:
       /* USER CODE BEGIN CUSTOM_STM_SWITCH_C_NOTIFY_ENABLED_EVT */
@@ -297,6 +292,8 @@ void Custom_APP_Notification(Custom_App_ConnHandle_Not_evt_t *pNotification)
 void Custom_APP_Init(void)
 {
   /* USER CODE BEGIN CUSTOM_APP_Init */
+  AppProtocol_Init();
+
   uint8_t sensor_loc;
 
   sensor_loc = CUSTOM_STM_HRS_BODY_SENSOR_LOCATION_WRIST;
