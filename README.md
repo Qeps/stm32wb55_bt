@@ -2,6 +2,15 @@
 
 This project is a Flutter-based mobile application implementing a complete Bluetooth Low Energy (BLE) workflow - from device discovery and connection management to data exchange and communication diagnostics. The application was developed by a four-person team with a clear division of responsibilities and development stages, resulting in a clean and extensible architecture.
 
+## Team Responsibilities
+Lidia    - device list screen, CMD_GET_LINK_STATUS
+
+Mateusz  - ble manager, CMD_LED_TEST
+
+Kacper   - device control screen, CMD_GET_FW_BUILD
+
+Gerard   - integration, CMD_GET_RSSI
+
 ## Project Overview
 
 The application demonstrates a practical approach to integrating BLE communication into a mobile app while maintaining strict separation between the UI layer and communication logic. The design follows principles commonly used in embedded systems, where higher layers interact with hardware through well-defined interfaces instead of protocol-specific details.
