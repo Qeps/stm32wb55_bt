@@ -53,3 +53,9 @@ flutter run
 The application is platform-agnostic at the application layer and relies on Flutter’s cross-platform BLE support to run on both Android and iOS devices. This project can be used both as a starting point for further BLE-based mobile development and as a reference architecture for teams working at the intersection of mobile applications and embedded systems.
 
 The final stage focused on improving code clarity, consistency, and observability. A structured logging mechanism was introduced to provide insight into BLE operations, effectively acting as a software-level logic analyzer for communication. The resulting architecture is ready for extension with additional BLE services, characteristics, or advanced application logic.
+
+## Application Demonstration
+![Screenshot_20260120_215357](https://github.com/user-attachments/assets/5fb3a12d-3e25-4875-9c7b-9aabe24b0811)
+![Screenshot_20260120_215414](https://github.com/user-attachments/assets/bb82f19b-8050-4e9b-bfe5-47c473b021e6)
+![Screenshot_20260120_215423](https://github.com/user-attachments/assets/11bd060b-e2a6-468a-ac9e-4ffa6446fdbb)
+
