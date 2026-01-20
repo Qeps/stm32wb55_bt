@@ -32,5 +32,15 @@ The application consists of three main screens, each with a clearly defined role
 Each screen is implemented as an independent component, allowing future extensions or refactoring with minimal impact on the rest of the application.
 
 ### Stage 4 - Diagnostics and Maintainability
+## Setup and Run
+
+After installing the Flutter SDK and required platform tools, verify that the environment is correctly configured and run the application using the following commands:
+
+```bash
+flutter doctor
+flutter pub get
+flutter run
+```
+The application is platform-agnostic at the application layer and relies on Flutter’s cross-platform BLE support to run on both Android and iOS devices. This project can be used both as a starting point for further BLE-based mobile development and as a reference architecture for teams working at the intersection of mobile applications and embedded systems.
 
 The final stage focused on improving code clarity, consistency, and observability. A structured logging mechanism was introduced to provide insight into BLE operations, effectively acting as a software-level logic analyzer for communication. The resulting architecture is ready for extension with additional BLE services, characteristics, or advanced application logic.
